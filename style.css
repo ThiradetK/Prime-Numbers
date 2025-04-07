@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --No-Of-Column: 10;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  top: 50px;
+  left: auto;
+  right: auto;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #6666;
+}
+
+.container-btn {
+  position: absolute;
+  top: 120px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btn__modern-minimal,
+.Back {
+  color: #6666;
+  font-weight: 700;
+  background-color: #e0e0e0;
+  border: none;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffff;
+  padding: 20px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  margin: 20px auto 50px auto;
+}
+
+.btn__modern-minimal:active,
+.Back:active {
+  box-shadow: inset 6px 6px 10px #bebebe, inset -6px -6px 10px #ffff;
+  background-color: #e0e0e0;
+}
+
+.btn__modern-minimal:hover,
+.Back:hover {
+  background: #d6d6d6;
+  color: #555;
+}
+
+.List {
+  display: grid;
+  grid-template-columns: repeat(var(--No-Of-Column), 1fr);
+  gap: 20px;
+
+  list-style: none;
+
+  font-weight: 700;
+  font-size: 22px;
+  color: #6666;
+
+  li {
+    text-shadow: 8px 8px 20px grey;
+  }
+}
+
+.input {
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  height: 60px;
+  width: 220px;
+
+  box-shadow: inset 6px 6px 10px #bebebe, inset -6px -6px 10px #ffff;
+
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 32px;
+  color: #7777;
+}
+
+.input::placeholder {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgba(153, 153, 153, 0.625);
+}
+
+.no-spin::-webkit-outer-spin-button,
+.no-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
