@@ -118,5 +118,9 @@ body {
 @media (max-width: 600px) {
   .List {
     grid-template-columns: repeat(var(--No-Of-Column-mobile), 1fr);
+    font-size: 24px;
+    li {
+     padding: 5px;
+    }
   }
 }
