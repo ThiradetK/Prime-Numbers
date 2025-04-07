@@ -52,7 +52,7 @@ const Calc = function (input) {
 
       const columnMobile = Math.min(
         Math.ceil(data.length / Math.floor(Math.sqrt(data.length))),
-        7
+        5
       );
 
       document.documentElement.style.setProperty("--No-Of-Column", column);
