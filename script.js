@@ -50,7 +50,13 @@ const Calc = function (input) {
         20
       );
 
+      const columnMobile = Math.min(
+        Math.ceil(data.length / Math.floor(Math.sqrt(data.length))),
+        7
+      );
+
       document.documentElement.style.setProperty("--No-Of-Column", column);
+      document.documentElement.style.setProperty("--No-Of-Column-mobile", columnMobile);
       setTimeout(function () {
         input.remove();
         btnEl.remove();
