@@ -6,6 +6,7 @@
 
 :root {
   --No-Of-Column: 10;
+  --No-Of-Column-mobile: 7;
 }
 
 body {
@@ -111,4 +112,10 @@ body {
 .no-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .List {
+    grid-template-columns: repeat(var(--No-Of-Column-mobile), 1fr);
+  }
 }
