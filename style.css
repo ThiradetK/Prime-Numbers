@@ -32,6 +32,7 @@ body {
 .container-btn {
   position: absolute;
   top: 120px;
+  padding: 25px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
